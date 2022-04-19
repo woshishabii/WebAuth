@@ -1,3 +1,19 @@
-<p><a href="{% url 'authapi:index' %}">AuthApi</a></p>
+{% load django_bootstrap5 %}
 
-{% block content %}{% endblock content %}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WebAuth</title>
+
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>
