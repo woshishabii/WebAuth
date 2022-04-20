@@ -54,6 +54,11 @@ def instance_query(request, query_uuid, query_species):
     if 'md5' in species:
         response['result']['md5'] = query.md5
 
+    # Need Modify
+    if 'views' not in species:
+        query.views += 1
+        query.save()
+
     return HttpResponse(json.dumps(response), content_type="application/json")
 
 
