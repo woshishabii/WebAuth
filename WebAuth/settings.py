@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a8-9t31goep51r=-hto)1%2huza2a0h@p+bls=wagy09twv9vg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.107']
+ALLOWED_HOSTS = ['192.168.0.107', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -37,7 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # My Applications
     'authapi',
+
+    # Third Party
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
