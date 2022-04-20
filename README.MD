@@ -12,4 +12,5 @@ Created by woshishabii
 - Django == 4.0.4
 - django-bootstrap5 == 21.3
 
-Thx very much for your support!
+## Thanks
+- Webpixels - Quick Template
