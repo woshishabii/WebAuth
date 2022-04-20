@@ -13,4 +13,4 @@ def instance_query(request, query_uuid, query_species):
 
 
 def test_base(request):
-    return render(request, 'authapi/templates/base.html')
+    return render(request, 'authapi/base.html')
