@@ -67,11 +67,13 @@
 
 <body>
     <!-- Preloader -->
+    <!--
     <div class="preloader">
         <div class="spinner-border text-primary" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
+    -->
     <!-- Go Pro -->
     <!--
     <a href="https://webpixels.io/themes/quick-website-ui-kit" class="btn btn-block btn-dark text-truncate rounded-0 py-2 d-none d-lg-block" style="z-index: 1000;" target="_blank">
@@ -100,7 +102,7 @@
                         <div class="dropdown-menu dropdown-menu-single">
                             <a href="{% url 'authapi:index' %}" class="dropdown-item">Homepage</a>
                             <a href="{% url 'authapi:about' %}" class="dropdown-item">About us</a>
-                            <a href="contact.html" class="dropdown-item">Contact</a>
+                            <a href="{% url 'authapi:contact' %}" class="dropdown-item">Contact</a>
                             <div class="dropdown-divider"></div>
                             <a href="login.html" class="dropdown-item">Login</a>
                         </div>
@@ -177,7 +179,7 @@
                         <ul class="list-unstyled">
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="{% url 'authapi:contact' %}">Contact</a></li>
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
