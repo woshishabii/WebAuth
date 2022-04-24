@@ -7,7 +7,7 @@ class Instance(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4(), editable=False)
     version = models.CharField(max_length=50)
     force = models.BooleanField()
-    views = models.IntegerField(default=0)
+    views = models.IntegerField(default=0, auto_created=True, editable=False)
     link = models.CharField(max_length=200, blank=True)
     announcement = models.TextField(blank=True)
     update = models.TextField(blank=True)
