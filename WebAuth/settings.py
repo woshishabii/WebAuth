@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # My Apps
     'authapi',
+    'docs',
 
     # Third Party
     'django_bootstrap5',
