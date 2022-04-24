@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     # My Apps
     'authapi',
+
+    # Third Party
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [

@@ -89,7 +89,7 @@
                 <!-- Live preview -->
                 <ul class="navbar-nav flex-row align-items-center d-lg-none">
                     <li class="nav-item">
-                        <a href="../index.html" class="nav-link nav-link-icon"><i data-feather="eye"></i></a>
+                        <a href="{% url 'authapi:index' %}" class="nav-link nav-link-icon"><i data-feather="eye"></i></a>
                     </li>
                 </ul>
                 <!-- Navbar nav -->
@@ -107,7 +107,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="../index.html" class="btn btn-sm btn-primary ml-4 btn-icon d-none d-lg-inline-flex">
+                <a href="{% url 'authapi:index' %}" class="btn btn-sm btn-primary ml-4 btn-icon d-none d-lg-inline-flex">
                     <span class="btn-inner--icon"><i data-feather="chevron-left"></i></span>
                     <span class="btn-inner--text">Back to Quick</span>
                 </a>
