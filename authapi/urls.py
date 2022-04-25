@@ -10,5 +10,6 @@ urlpatterns = [
     path('api/getInstance/<str:query_uuid>/<str:query_species>', views.instance_query, name='instance_query'),
 
     # Testing
+    # Disable when not needed
     # path('test/base', views.test_base, name='test_base'),
 ]
