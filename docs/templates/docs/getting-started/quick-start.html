@@ -19,29 +19,74 @@
 
     <h3 id="species">Species</h3>
     <p>You can custom the data you get from the server.</p>
+    <p>Species are separated by '|' like <code>name|version|force</code></p>
     <table class="table">
         <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
+            <th scope="col"><strong>Species</strong></th>
+            <th scope="col"><strong>Description</strong></th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">name</th>
+            <td>the instance's name</td>
         </tr>
         <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
+            <th scope="row">version</th>
+            <td>the current version of the instance</td>
         </tr>
         <tr>
-            <th scope="row">3</th>
-            <td>LarryLarryLarryLarryLarryLarryLarryLarryLarryLarryLarry
-                <br>LarryLarryLarryLarryLarryLarryLarryLarryLarryLarryLarry
-                <br>LarryLarryLarryLarryLarryLarry
-                <br>LarryLarryLarryLarryLarryLarryLarryLarryLarryLarryLarry</td>
+            <th scope="row">force</th>
+            <td>If the version is forced to update to a new version</td>
+        </tr>
+        <tr>
+            <th scope="row">views</th>
+            <td>How many times the API is requested</td>
+        </tr>
+        <tr>
+            <th scope="row">link</th>
+            <td>The download link of the new version</td>
+        </tr>
+        <tr>
+            <th scope="row">announcement</th>
+            <td>Instance's announcement</td>
+        </tr>
+        <tr>
+            <th scope="row">update</th>
+            <td>Update log</td>
+        </tr>
+        <tr>
+            <th scope="row">md5</th>
+            <td>Update installer's md5</td>
         </tr>
         </tbody>
     </table>
+    <h3 id="return">Return Value</h3>
+    <p>The return value is in JSON format like:</p>
+    <code class="language-json">
+        <br> {
+        <br> "uuid": "2e0f0422-3054-440d-ac81-84417961b157",  # UUID of the instance
+        <br> "species": [                                     # List of species
+        <br> "name",
+        <br> "version",
+        <br> "force",
+        <br> "views",
+        <br> "link",
+        <br> "announcement",
+        <br> "update",
+        <br> "md5"
+        <br> ],
+        <br> "result": {                                     # Result of the instance
+        <br> "name": "test",
+        <br> "version": "0.0.0",
+        <br> "force": false,
+        <br> "views": 19,
+        <br> "link": "",
+        <br> "announcement": "",
+        <br> "update": "",
+        <br> "md5": ""
+        <br> }
+        <br> }
+    </code>
 {% endblock content %}
