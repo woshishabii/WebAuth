@@ -1,34 +1,47 @@
 {% extends 'docs/base.html' %}
 
 {% block title %}
-    Quick start
+    Quick Start
 {% endblock %}
 
 {% block subtitle %}
-    Start using this amazing theme and jump-start your development with some amazing ready
-    to use components and pages.
+    Start using the best API platform for your project.
 {% endblock %}
 
 {% block content %}
-    <h3 id="preview">Preview</h3>
-    <p>You purchased and downloaded Quick? Then, you probably want to also see it working live in your browser.
-        There are a few things you need to do before getting started:</p>
-    <h3 id="svg-injector">SVG Injector</h3>
-    <p>We use a a fast, caching, dynamic inline SVG DOM injection library in order to keep the HTML markup clean.
-        Because of this, you will need to run a local web server so it can work properly:</p>
-    <div class="alert alert-info">
-        <strong>Development tip</strong>: The dynamic injection process uses AJAX calls to load SVG. If you are
-        developing locally without running a local webserver, be aware that default browser security settings may
-        block these calls.
-    </div>
-    <p>Use one of the options below to open a local web server:</p>
-    <h3 id="localhost">Localhost</h3>
-    <p>If you already have a set up development server, then you can simply copy and paste Quick within the
-        directory. After that, you should be able to access it in your browser via <code class="highlighter-rouge">localhost</code>.
-    </p>
-    <h3 id="gulp">Gulp</h3>
-    <p>Don’t have an already set up development server. No worries! you can start a server using Gulp. Read more
-        about the <a href="build-tools.html">build tools</a> in our docs. This will start server that can be
-        accessed via <code class="highlighter-rouge">http://localhost:3000</code> automatically and also watch for
-        any changes you might make.</p>
+    <h3 id="preview">Setup</h3>
+    <p>This application is easy to use.</p>
+    <h3 id="querying">API Query</h3>
+    <p>You can simply get a URL to get data.</p>
+    <p>For example, you have an instance with UUID('7e505667-83f4-4f32-9c01-f05f693b82c7')</p>
+    <p>You can get the data by following the URL:</p>
+    <code class="language-html">http://yoursite.com/api/getInstance/7e505667-83f4-4f32-9c01-f05f693b82c7/&lt;species&gt;</code>
+
+    <h3 id="species">Species</h3>
+    <p>You can custom the data you get from the server.</p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>LarryLarryLarryLarryLarryLarryLarryLarryLarryLarryLarry
+                <br>LarryLarryLarryLarryLarryLarryLarryLarryLarryLarryLarry
+                <br>LarryLarryLarryLarryLarryLarry
+                <br>LarryLarryLarryLarryLarryLarryLarryLarryLarryLarryLarry</td>
+        </tr>
+        </tbody>
+    </table>
 {% endblock content %}
