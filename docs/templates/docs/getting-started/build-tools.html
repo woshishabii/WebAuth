@@ -1,0 +1,68 @@
+{% extends 'docs/base.html' %}
+
+{% block title %}
+    Build tools
+{% endblock %}
+
+{% block subtitle %}
+    Automate painful or time-consuming tasks in your development workflow, so you can stop messing
+    around and build something using Gulp
+{% endblock %}
+
+{% block content %}
+    <h2 id="requirements">Requirements</h2>
+    <p>There are a couple of things you need to make sure are set up on your machine before running the commands in your
+        terminal.</p>
+    <h3 id="nodejs">Node.js</h3>
+    <p>In order to use our build tools you will need to download and install Node.js. If you do not have Node.js
+        installed
+        already, you can get it by downloading the package installer from the official website. Please download the
+        stable
+        version of Node.js (LTS).</p>
+    <p><a href="https://nodejs.org/en/" target="_blank">Download Node.js</a></p>
+    <h3 id="gulp-cli">Gulp CLI</h3>
+    <p>After Node is installed on your system you can now proceed to Gulp installation. To do that simply run the
+        command
+        below in your terminal. This will install Gulp globally.</p>
+    <div class="docs-example">
+        <figure class="highlight">
+            <pre><code class="language-plaintext" data-lang="plaintext">npm install gulp-cli -g</code></pre>
+        </figure>
+    </div>
+    <h2 id="package-management">Package management</h2>
+    <p>Now open the terminal and <code class="highlighter-rouge">cd</code> ro your project’s root. Once the path of your
+        workflow is changed you have to install all the packages needed. You can do this with NPM or Yarn.</p>
+    <div class="docs-example">
+        <figure class="highlight">
+            <pre><code class="language-plaintext" data-lang="plaintext">npm install</code></pre>
+        </figure>
+    </div>
+    <h2 id="gulp">Gulp</h2>
+    <p>Gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop
+        messing around and build something.</p>
+    <h3 id="commands">Commands</h3>
+    <p>For development we set a Gulp command that will compile the sources to dist then start a local Browsersync
+        instance
+        on port 3000 to serve and auto-refresh your pages as you edit.</p>
+    <div class="docs-example">
+        <figure class="highlight">
+            <pre><code class="language-plaintext" data-lang="plaintext">gulp</code></pre>
+        </figure>
+    </div>
+    <p>If you install new libraries, make sure you run the following command to sync your libs with the existing
+        ones:</p>
+    <div class="docs-example">
+        <figure class="highlight">
+            <pre><code class="language-plaintext" data-lang="plaintext">gulp libs</code></pre>
+        </figure>
+    </div>
+    <p>For production we set a Gulp command that will compile and minify the CSS and JS files ready to be included in
+        your
+        project</p>
+    <div class="docs-example">
+        <figure class="highlight">
+            <pre><code class="language-plaintext" data-lang="plaintext">gulp build</code></pre>
+        </figure>
+    </div>
+{% endblock %}
+<!-- Docs content -->
